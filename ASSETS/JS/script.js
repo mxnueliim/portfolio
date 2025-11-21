@@ -77,17 +77,17 @@ const modalGallery = {
   // Configuración de imágenes y descripciones por categoría
   data: {
     pie: {
-      images: ["/ASSETS/IMG/experiencia/pie/imagen1.jpg"],
+      images: ["./ASSETS/IMG/experiencia/pie/imagen1.jpg"],
       descriptions: ["Carta de recomendación."],
     },
     seremi: {
-      images: ["/ASSETS/IMG/experiencia/seremi/imagen1.jpg"],
+      images: ["./ASSETS/IMG/experiencia/seremi/imagen1.jpg"],
       descriptions: ["Carta de recomendación."],
     },
     "cursos-google": {
       images: [
-        "/ASSETS/IMG/estudios/cursos-google/google.jpg",
-        "/ASSETS/IMG/estudios/cursos-google/ti.jpg",
+        "./ASSETS/IMG/estudios/cursos-google/google.jpg",
+        "./ASSETS/IMG/estudios/cursos-google/ti.jpg",
       ],
       descriptions: [
         "Certificación en Análisis de Datos de Google",
@@ -95,7 +95,7 @@ const modalGallery = {
       ],
     },
     fonoaudiologia: {
-      images: ["/ASSETS/IMG/estudios/fonoaudiologia/imagen1.jpg"],
+      images: ["./ASSETS/IMG/estudios/fonoaudiologia/imagen1.jpg"],
       descriptions: [
         "Título profesional de Fonoaudiólogo - Universidad Católica de Temuco",
       ],
