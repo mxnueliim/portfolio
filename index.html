@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuel Ibarra - Portafolio</title>
+    <meta name="description" content="Portafolio de Manuel Ibarra, Full Stack Developer.">
+    <meta property="og:title" content="Manuel Ibarra - Portafolio">
+    <meta property="og:description" content="Full Stack Developer.">
+    <meta property="og:image" content="/ASSETS/IMG/favicon/favicon_round.png">
+    <link rel="icon" href="/ASSETS/IMG/favicon/favicon_round.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+    <link rel="stylesheet" href="/ASSETS/CSS/styles.css">
+</head>
+
+<body class="bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 antialiased">
+    <div id="cursor-highlight"></div>
+
+    <!-- Contenedor principal -->
+    <div
+        class="lg:flex lg:justify-between lg:gap-4 min-h-screen mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+
+        <!-- Sidebar columna izquierda -->
+        <aside
+            class="sidebar relative z-20 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+
+            <div class="space-y-6">
+                <h1 class="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-5xl">
+                    Manuel Ibarra
+                </h1>
+
+                <h2 class="text-lg font-medium tracking-tight text-rose-600 sm:text-xl">
+                    Full Stack Developer
+                </h2>
+
+                <p class="text-base text-zinc-700 dark:text-zinc-300 leading-relaxed max-w-xs">
+                    con formación en análisis de datos y experiencia previa en el área de la
+                    salud. Me especializo en crear soluciones accesibles, fáciles de usar y enfocadas en resolver
+                    problemas reales. Disfruto optimizar flujos, automatizar procesos y diseñar experiencias que
+                    faciliten la vida de las personas.
+                </p>
+
+                <!-- Navegación -->
+                <nav class="hidden lg:block" aria-label="In-page jump links">
+                    <ul class="mt-16 w-max space-y-3">
+                        <li>
+                            <a href="#about" class="nav-link py-3">
+                                <span
+                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="nav-link py-3">
+                                <span
+                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">Experiencia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#studies" class="nav-link py-3">
+                                <span
+                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">Estudios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="nav-link py-3">
+                                <span
+                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">Proyectos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="nav-link py-3">
+                                <span
+                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Redes -->
+            <div class="mt-8 flex items-center space-x-5 text-zinc-700 dark:text-zinc-300">
+                <a href="https://github.com/mxnueliim" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-rose-600 transition" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/fonomanuelibarram" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-rose-600 transition" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
+                        <path
+                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Contenido principal columna derecha -->
+        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
+
+            <!-- ABOUT -->
+            <section id="about" class="mb-24 lg:mb-36 scroll-mt-24">
+                <div class="space-y-4">
+                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                        Soy Manuel, Full Stack Developer con una trayectoria previa de cinco años como
+                        fonoaudiólogo en
+                        educación y salud. Mi paso por el mundo clínico me permitió desarrollar empatía,
+                        pensamiento analítico y la capacidad de resolver problemas complejos, habilidades
+                        que hoy aplico
+                        al desarrollo de software.
+                    </p>
+
+                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                        En 2024 decidí formalizar mi interés por la tecnología y comencé a estudiar
+                        programación. Desde
+                        entonces he trabajado con SQL, Python, Django, Laravel, Java, MVC, Tailwind,
+                        metodologías
+                        ágiles y bases de datos relacionales y no relacionales. Disfruto crear aplicaciones
+                        accesibles,
+                        optimizar procesos y diseñar soluciones que mejoren la experiencia de las personas.
+                    </p>
+
+                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                        Actualmente desarrollo una plataforma de gestión de recursos humanos como Full Stack
+                        Developer,
+                        participando en decisiones técnicas y construcción de funcionalidades clave.
+                    </p>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section id="experience" class="mb-24 lg:mb-36 scroll-mt-24">
+
+                <div class="space-y-12">
+
+                    <!-- EXPERIENCIA 1 -->
+                    <div class="timeline-item">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                                Full Stack Developer
+                            </h3>
+                            <p class="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                Energiza Spa
+                            </p>
+                            <p class="text-xs text-zinc-500 dark:text-zinc-400">
+                                2025 — Presente
+                            </p>
+                        </div>
+
+                        <div class="mt-4 space-y-3">
+                            <p class="text-sm leading-relaxed text-zinc-700 dark:text-zinc-400">
+                                Desarrollo de una plataforma integral de gestión para recursos humanos
+                                (asistencias,
+                                pagos, documentos y cumplimiento laboral).
+                            </p>
+
+                            <ul class="text-sm text-zinc-700 dark:text-zinc-400 space-y-1 list-disc list-inside">
+                                <li>Avancé el proyecto de un 10% estancado a un 80% en pocos meses.</li>
+                                <li>Reduje significativamente pérdidas económicas asociadas a certificación
+                                    externa.
+                                </li>
+                                <li>Implementación de módulos completos en Laravel + Tailwind + MySQL.</li>
+                                <li>Trabajo directo con el technical lead en decisiones de arquitectura.
+                                </li>
+                            </ul>
+
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Laravel</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Tailwind</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">MySQL</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">PHP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EXPERIENCIA 2 -->
+                    <div class="timeline-item" data-modal="pie">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                                Fonoaudiólogo Programa Integración Escolar (PIE)
+                            </h3>
+                            <p class="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                Educación · Colegio Rayenco
+                            </p>
+                            <p class="text-xs text-zinc-500 dark:text-zinc-400">
+                                2021 — 2025
+                            </p>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="text-sm leading-relaxed text-zinc-700 dark:text-zinc-400">
+                                Abordaje educativo en instituciones escolares para niños, adolescentes y
+                                adultos con
+                                Necesidades
+                                Educativas Transitorias y Permanentes (NEET y NEEP). Formé parte del equipo
+                                multidisciplinarios
+                                encargado de intervenciones individuales y grupales para diagnósticos como
+                                Sindrome de
+                                Down, Condición
+                                del Espectro Autista, Déficit Atencional y Déficit Intelectual.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">
+                                    Intervención Educativa
+                                </span>
+                                <span class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">
+                                    Trabajo Multidisciplinario
+                                </span>
+                                <span class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">
+                                    Comunicación Aumentativa
+                                </span>
+                                <span class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">
+                                    Inclusión
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- EXPERIENCIA 3 -->
+                    <div class="timeline-item" data-modal="seremi">
+                        <div class="space-y-2">
+                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                                Fonoaudiólogo
+                            </h3>
+                            <p class="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                                Salud · SEREMI De Salud Región de La Araucanía
+                            </p>
+                            <p class="text-xs text-zinc-500 dark:text-zinc-400">
+                                2021 — 2022
+                            </p>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="text-sm leading-relaxed text-zinc-700 dark:text-zinc-400">
+                                Trabajo clínico en contexto de alerta sanitaria,
+                                desarrollando planes de apoyo y colaborando con equipos multidisciplinarios
+                                para
+                                lógistica e intervención comunitaria en la región de La Araucanía.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">
+                                Gestión en Crisis
+                            </span>
+                            <span class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">
+                                Coordinación Comunitaria
+                            </span>
+                            <span class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">
+                                Planificación de Intervenciones
+                            </span>
+                            <span class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">
+                                Trabajo Intersectorial
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STUDIES -->
+            <section id="studies" class="mb-24 lg:mb-36 scroll-mt-24">
+
+                <div class="space-y-10">
+
+                    <!-- Técnico Analista Programador -->
+                    <div class="grid sm:grid-cols-8 sm:gap-8">
+                        <header class="text-xs font-semibold uppercase text-zinc-500 sm:col-span-2">
+                            2024 — 2025
+                        </header>
+                        <div class="sm:col-span-6">
+                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Técnico
+                                Analista
+                                Programador</h3>
+                            <p class="text-sm text-zinc-600 dark:text-zinc-300 italic">Inacap Temuco</p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Python
+                                    · Django</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Bootstrap</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">MySQL
+                                    · MongoDB</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Otros estudios -->
+                    <div class="grid sm:grid-cols-8 sm:gap-8">
+                        <header class="text-xs font-semibold uppercase text-zinc-500 sm:col-span-2">
+                            2025
+                        </header>
+                        <div class="sm:col-span-6">
+                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Bootcamp Java
+                                Trainee
+                            </h3>
+                            <p class="text-sm text-zinc-600 dark:text-zinc-300 italic">Skillnest</p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Java</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Spring
+                                    Boot</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">MySQL
+                                    · MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-8 sm:gap-8" data-modal="cursos-google">
+                        <header class="text-xs font-semibold uppercase text-zinc-500 sm:col-span-2">
+                            2024 — 2025
+                        </header>
+                        <div class="sm:col-span-6">
+                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">Cursos Google
+                            </h3>
+                            <p class="text-sm text-zinc-600 dark:text-zinc-300 italic">
+                                Talento digital
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Ciberseguridad</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Soporte
+                                    TI</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Análisis
+                                    de datos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fonoaudiología -->
+                    <div class="grid sm:grid-cols-8 sm:gap-8" data-modal="fonoaudiologia">
+                        <header class="text-xs font-semibold uppercase text-zinc-500 sm:col-span-2">
+                            2015 — 2020
+                        </header>
+                        <div class="sm:col-span-6">
+                            <h3 class="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
+                                Fonoaudiología</h3>
+                            <p class="text-sm text-zinc-600 dark:text-zinc-300 italic">Universidad Católica
+                                de Temuco
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-2">
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Salud</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Rehabilitación</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Trastornos
+                                    de la comunicación</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Atención
+                                    al paciente</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects" class="mb-24 lg:mb-36 scroll-mt-24">
+                <div class="space-y-12">
+
+                    <!-- Proyecto 1 -->
+                    <div class="project-card">
+                        <a href="https://www.vanadio.cl" target="_blank" class="project-image-container">
+                            <img src="/ASSETS/IMG/proyectos/proyecto1.jpg" alt="Proyecto 1" class="project-image">
+                        </a>
+                        <div class="project-info">
+                            <h3 class="project-title">
+                                Vanadio
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="project-arrow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </h3>
+                            <p class="project-description">
+                                Plataforma web para gestión integral de recursos humanos. Incluye módulos de
+                                asistencia,
+                                pagos, generación de documentos y cumplimiento laboral fiscalizado por la
+                                Dirección del
+                                Trabajo.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-3">
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Laravel</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Tailwind</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 1 -->
+                    <div class="project-card">
+                        <a href="https://github.com/mxnueliim/SistemaAutenticacion" target="_blank"
+                            class="project-image-container">
+                            <img src="/ASSETS/IMG/proyectos/proyecto2.jpg" alt="Proyecto 1" class="project-image">
+                        </a>
+                        <div class="project-info">
+                            <h3 class="project-title">
+                                Sistema gestión de cursos
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" class="project-arrow">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </h3>
+                            <p class="project-description">
+                                Proyecto para sistema básico de autenticación y autorización que use base de
+                                datos (JPA)
+                                como fuente de usuarios, e implemente un control de acceso y manipulación
+                                basado en
+                                roles.
+                            </p>
+                            <div class="flex flex-wrap gap-2 pt-3">
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Java</span>
+                                <span
+                                    class="rounded-full bg-rose-600/10 px-3 py-1 text-xs font-semibold text-rose-600">Tailwind</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="mb-24 pb-24 scroll-mt-24">
+                <p class="text-zinc-700 dark:text-zinc-400">Puedes encontrarme en:</p>
+
+                <ul class="mt-4 space-y-2">
+                    <li><a href="https://www.linkedin.com/in/fonomanuelibarram" target="_blank"
+                            rel="noopener noreferrer" class="text-rose-600 hover:underline">LinkedIn</a></li>
+                    <li><a href="https://github.com/mxnueliim" target="_blank" rel="noopener noreferrer"
+                            class="text-rose-600 hover:underline">GitHub</a></li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Modal con galería -->
+    <div id="modal-gallery" class="modal-overlay hidden">
+        <div class="modal-container">
+            <button id="modal-close" class="modal-close" aria-label="Cerrar modal">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24
+                                        24" stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div class="modal-content">
+                <!-- Contador -->
+                <div id="modal-counter" class="modal-counter">1 / 1</div>
+
+                <!-- Imagen -->
+                <img id="modal-image" src="" alt="Gallery image" class="modal-image">
+
+                <!-- Descripción -->
+                <p id="modal-description" class="modal-description"></p>
+
+                <!-- Botones de navegación -->
+                <button id="modal-prev" class="modal-nav modal-nav-prev" aria-label="Anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24
+                                            24" stroke="currentColor" class="w-10 h-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+
+                <button id="modal-next" class="modal-nav modal-nav-next" aria-label="Siguiente">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24
+                                            24" stroke="currentColor" class="w-10 h-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+
+                <!-- Thumbnails -->
+                <div id="modal-thumbnails" class="modal-thumbnails"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón toggle tema - fixed en esquina inferior derecha -->
+    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+        <svg id="theme-icon-sun" class="theme-icon hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <svg id="theme-icon-moon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+    </button>
+
+    <script src="/ASSETS/JS/script.js"></script>
+</body>
+
+</html>
