@@ -22,125 +22,58 @@
 <body class="bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-100 antialiased">
     <div id="cursor-highlight"></div>
 
-    <!-- Contenedor principal -->
-    <div
-        class="lg:flex lg:justify-between lg:gap-4 min-h-screen mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <!-- Navbar Glass -->
+    <nav
+        class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/70 dark:bg-zinc-900/70 border-b border-zinc-200/50 dark:border-zinc-800/50 transition-colors duration-300">
+        <div class="max-w-screen-xl mx-auto px-6 md:px-12 lg:px-24 h-16 flex items-center justify-between">
+            <a href="#"
+                class="text-lg font-bold text-zinc-900 dark:text-zinc-100 hover:text-rose-600 dark:hover:text-rose-500 transition-colors">
+                Manuel Ibarra
+            </a>
 
-        <!-- Sidebar columna izquierda -->
-        <aside
-            class="sidebar relative z-20 lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#experience"
+                        class="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-500 transition-colors">Experiencia</a>
+                </li>
+                <li><a href="#studies"
+                        class="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-500 transition-colors">Estudios</a>
+                </li>
+                <li><a href="#projects"
+                        class="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-500 transition-colors">Proyectos</a>
+                </li>
+                <li><a href="#about"
+                        class="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-500 transition-colors">About</a>
+                </li>
+                <li><a href="#contact"
+                        class="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-500 transition-colors">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-            <div class="space-y-6">
-                <h1 class="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-5xl">
-                    Manuel Ibarra
-                </h1>
+    <div class="mx-auto max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24">
 
-                <h2 class="text-lg font-medium tracking-tight text-rose-600 sm:text-xl">
-                    Full Stack Developer
-                </h2>
+        <!-- Header / Hero Section -->
+        <header class="mb-16 lg:mb-24 pt-10 mx-auto max-w-3xl text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-5xl mb-4">
+                Manuel Ibarra
+            </h1>
+            <h2 class="text-xl font-medium tracking-tight text-rose-600 sm:text-2xl mb-6">
+                Full Stack Developer
+            </h2>
+            <p class="text-lg text-zinc-700 dark:text-zinc-300 leading-relaxed mx-auto">
+                con formación en análisis de datos y experiencia previa en el área de la
+                salud. Me especializo en crear soluciones accesibles, fáciles de usar y enfocadas en resolver
+                problemas reales. Disfruto optimizar flujos, automatizar procesos y diseñar experiencias que
+                faciliten la vida de las personas.
+            </p>
+        </header>
 
-                <p class="text-base text-zinc-700 dark:text-zinc-300 leading-relaxed max-w-xs">
-                    con formación en análisis de datos y experiencia previa en el área de la
-                    salud. Me especializo en crear soluciones accesibles, fáciles de usar y enfocadas en resolver
-                    problemas reales. Disfruto optimizar flujos, automatizar procesos y diseñar experiencias que
-                    faciliten la vida de las personas.
-                </p>
-
-                <!-- Navegación -->
-                <nav class="hidden lg:block" aria-label="In-page jump links">
-                    <ul class="mt-16 w-max space-y-3">
-                        <li>
-                            <a href="#about" class="nav-link py-3">
-                                <span
-                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">About</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#experience" class="nav-link py-3">
-                                <span
-                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">Experiencia</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#studies" class="nav-link py-3">
-                                <span
-                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">Estudios</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="nav-link py-3">
-                                <span
-                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">Proyectos</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="nav-link py-3">
-                                <span
-                                    class="nav-text text-xs font-bold uppercase tracking-widest text-zinc-500 transition-colors">Contacto</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <!-- Redes -->
-            <div class="mt-8 flex items-center space-x-5 text-zinc-700 dark:text-zinc-300">
-                <a href="https://github.com/mxnueliim" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-rose-600 transition" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-6 w-6">
-                        <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
-                        </path>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/fonomanuelibarram" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-rose-600 transition" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-6 w-6">
-                        <path
-                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
-                        </path>
-                    </svg>
-                </a>
-            </div>
-        </aside>
-
-        <!-- Contenido principal columna derecha -->
-        <main id="content" class="pt-24 lg:w-1/2 lg:py-24">
-
-            <!-- ABOUT -->
-            <section id="about" class="mb-24 lg:mb-36 scroll-mt-24">
-                <div class="space-y-4">
-                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                        Soy Manuel, Full Stack Developer con una trayectoria previa de cinco años como
-                        fonoaudiólogo en
-                        educación y salud. Mi paso por el mundo clínico me permitió desarrollar empatía,
-                        pensamiento analítico y la capacidad de resolver problemas complejos, habilidades
-                        que hoy aplico
-                        al desarrollo de software.
-                    </p>
-
-                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                        En 2024 decidí formalizar mi interés por la tecnología y comencé a estudiar
-                        programación. Desde
-                        entonces he trabajado con SQL, Python, Django, Laravel, Java, MVC, Tailwind,
-                        metodologías
-                        ágiles y bases de datos relacionales y no relacionales. Disfruto crear aplicaciones
-                        accesibles,
-                        optimizar procesos y diseñar soluciones que mejoren la experiencia de las personas.
-                    </p>
-
-                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                        Actualmente desarrollo una plataforma de gestión de recursos humanos como Full Stack
-                        Developer,
-                        participando en decisiones técnicas y construcción de funcionalidades clave.
-                    </p>
-                </div>
-            </section>
+        <main id="content" class="space-y-24 lg:space-y-32">
 
             <!-- EXPERIENCE -->
-            <section id="experience" class="mb-24 lg:mb-36 scroll-mt-24">
-
-                <div class="space-y-12">
+            <section id="experience" class="scroll-mt-24">
+                <div class="space-y-12 max-w-3xl mx-auto">
 
                     <!-- EXPERIENCIA 1 -->
                     <div class="timeline-item">
@@ -271,9 +204,8 @@
             </section>
 
             <!-- STUDIES -->
-            <section id="studies" class="mb-24 lg:mb-36 scroll-mt-24">
-
-                <div class="space-y-10">
+            <section id="studies" class="scroll-mt-24">
+                <div class="space-y-10 max-w-3xl mx-auto">
 
                     <!-- Técnico Analista Programador -->
                     <div class="grid sm:grid-cols-8 sm:gap-8">
@@ -375,8 +307,8 @@
             </section>
 
             <!-- PROJECTS -->
-            <section id="projects" class="mb-24 lg:mb-36 scroll-mt-24">
-                <div class="space-y-12">
+            <section id="projects" class="scroll-mt-24">
+                <div class="space-y-12 max-w-3xl mx-auto">
 
                     <!-- Proyecto 1 -->
                     <div class="project-card">
@@ -410,11 +342,11 @@
                         </div>
                     </div>
 
-                    <!-- Proyecto 1 -->
+                    <!-- Proyecto 2 -->
                     <div class="project-card">
                         <a href="https://github.com/mxnueliim/SistemaAutenticacion" target="_blank"
                             class="project-image-container">
-                            <img src="./ASSETS/IMG/proyectos/proyecto2.jpg" alt="Proyecto 1" class="project-image">
+                            <img src="./ASSETS/IMG/proyectos/proyecto2.jpg" alt="Proyecto 2" class="project-image">
                         </a>
                         <div class="project-info">
                             <h3 class="project-title">
@@ -443,16 +375,60 @@
                 </div>
             </section>
 
-            <!-- CONTACT -->
-            <section id="contact" class="mb-24 pb-24 scroll-mt-24">
-                <p class="text-zinc-700 dark:text-zinc-400">Puedes encontrarme en:</p>
+            <!-- ABOUT -->
+            <section id="about" class="scroll-mt-24">
+                <div class="space-y-4 max-w-3xl mx-auto">
+                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                        Soy Manuel, Full Stack Developer con una trayectoria previa de cinco años como
+                        fonoaudiólogo en
+                        educación y salud. Mi paso por el mundo clínico me permitió desarrollar empatía,
+                        pensamiento analítico y la capacidad de resolver problemas complejos, habilidades
+                        que hoy aplico
+                        al desarrollo de software.
+                    </p>
 
-                <ul class="mt-4 space-y-2">
-                    <li><a href="https://www.linkedin.com/in/fonomanuelibarram" target="_blank"
-                            rel="noopener noreferrer" class="text-rose-600 hover:underline">LinkedIn</a></li>
-                    <li><a href="https://github.com/mxnueliim" target="_blank" rel="noopener noreferrer"
-                            class="text-rose-600 hover:underline">GitHub</a></li>
-                </ul>
+                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                        En 2024 decidí formalizar mi interés por la tecnología y comencé a estudiar
+                        programación. Desde
+                        entonces he trabajado con SQL, Python, Django, Laravel, Java, MVC, Tailwind,
+                        metodologías
+                        ágiles y bases de datos relacionales y no relacionales. Disfruto crear aplicaciones
+                        accesibles,
+                        optimizar procesos y diseñar soluciones que mejoren la experiencia de las personas.
+                    </p>
+
+                    <p class="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                        Actualmente desarrollo una plataforma de gestión de recursos humanos como Full Stack
+                        Developer,
+                        participando en decisiones técnicas y construcción de funcionalidades clave.
+                    </p>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="pb-24 scroll-mt-24">
+                <p class="text-zinc-700 dark:text-zinc-400 mb-6 text-center">Puedes encontrarme en:</p>
+
+                <div class="flex items-center justify-center space-x-6">
+                    <a href="https://github.com/mxnueliim" target="_blank" rel="noopener noreferrer"
+                        class="text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-500 transition-colors"
+                        aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-8 w-8">
+                            <path
+                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fonomanuelibarram" target="_blank" rel="noopener noreferrer"
+                        class="text-zinc-600 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-500 transition-colors"
+                        aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-8 w-8">
+                            <path
+                                d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
             </section>
 
         </main>
